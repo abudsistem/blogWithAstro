@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from 'astro:assets';
 
 const pageTitle = "About Me";
 const happy = true;
@@ -33,43 +34,91 @@ const textCase = "uppercase";
   </style>
   
   <BaseLayout pageTitle={pageTitle}>
-    <h2>... and my new Astro site!</h2>
+    <h2> Estas son las medallas y los diplomas que ganó Ecuador en los Juegos Olímpicos de París</h2>
   
     <p>
-      I am working through Astro's introductory tutorial. This is the second page
-      on my website, and it's the first one I built myself!
+      La delegación ecuatoriana superó la actuación de Tokio 2021, en donde se obtuvieron tres medallas (dos de oro y una de plata). En París 2024 se ganaron una de oro, dos de plata y dos de bronce.
     </p>
   
     <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
+      Ecuador alcanzó una participación histórica y muchos triunfos en los Juegos Olímpicos de París 2024.
     </p>
-  
-    {happy && <p>I am happy to be learning Astro!</p>}
-  
-    {finished && <p>I finished this tutorial!</p>}
-  
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-  
-    <p>Here are a few facts about me:</p>
-    <ul>
-      <li>My name is {identity.firstName}.</li>
-      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-      {
-        identity.hobbies.length >= 2 && (
-          <li>
-            Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-          </li>
-        )
-      }
-    </ul>
-    <p>My skills are:</p><p></p><ul>
-      {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+
+    <p>
+      La delegación tricolor que compitió en París, compuesta por 40 deportistas, superó la participación de la última edición, en la que se obtuvieron tres medallas: las de oro de Neisi Dajomes y Richard Carapaz, y la de plata de Tamara Salazar.
+    </p>
+    
+    <p>
+      Estas son las medallas y los diplomas que ganó Ecuador en estos Juegos Olímpicos:
+    </p>
+
+    <h2>
+      Medallas
+    </h2>
+
+    <h3>
+      Daniel Pintado
+    </h3>
+
+    <p>
+      El atleta cuencano hizo historia al consagrarse campeón olímpico en la prueba de los 20 kilómetros. Tuvieron que pasar 16 años para que un marchista ecuatoriano vuelva a ganar una medalla en Juegos Olímpicos (la última había sido de plata, de Jefferson Pérez en Pekín 2008) y 28 años para ganar una de oro (Jefferson Pérez en Atlanta 1996).
+    </p>
+
+    <Image
+    src="https://upload.wikimedia.org/wikipedia/commons/1/18/Brian_Daniel_Pintado_cropped.jpg"
+    alt="texto descriptivo"
+    width="250"
+    height="350"
+    />
+
+
+    <h3>
+      Glenda Morejón y Daniel Pintado
+    </h3>
+
+    <p>
+      Apenas una semana después del oro de Pintado en la prueba individual, la marcha le volvió a dar una medalla al Ecuador. En los relevos mixtos, Glenda Morejón y Daniel Pintado culminaron en el segundo puesto, a 51 segundos de la dupla de los españoles Álvaro Martín y María Pérez, y se llevaron la presea de plata.
+    </p>
+
+    <Image
+    src="https://imagenes.primicias.ec/files/main_image_400_220/files/fp/uploads/2024/08/07/66b3aa7b3393e.r_d.1559-931-1333.jpeg"
+    alt="texto descriptivo"
+    width="400"
+    height="200"
+    />
+
+
+    <h3>
+      Lucía Yépez
+    </h3>
+
+    <p>
+      La luchadora quevedeña tuvo una actuación impecable en los 53 kilogramos y se quedó con la medalla de plata. Lucía Yépez cayó en la final Akari Fujinami por 10-0. De todas formas, cierra unos Juegos Olímpicos de París inolvidables con tan solo 23 años.
+    </p>
+
+
+    <Image
+    src="data:image/jpeg;base64,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"
+    alt="texto descriptivo"
+    width="400"
+    height="250"
+    />
+
+    <h3>
+      Angie Palacios
+    </h3>
+
+    <p>
+      Angie Palacios inscribió su nombre en la historia del deporte ecuatoriano. La pesista de 23 años se llevó la medalla de bronce en la categoría de los 71 kilogramos. En el arranque culminó segunda, con una marca de 116 kilos. Incluso, rompió el récord olímpico con este peso, pero luego fue superada por un kilo por la estadounidense Olivia Reeves. Ya en el podio, Angie Palacios se emocionó y derramó lágrimas.
+    </p>
+
+
+    <Image
+    src="https://www.elcomercio.com/wp-content/uploads/2024/08/1000101401-1024x719.jpg"
+    alt="texto descriptivo"
+    width="450"
+    height="300"
+    />
   </BaseLayout>
+
+  

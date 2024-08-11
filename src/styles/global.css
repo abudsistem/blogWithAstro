@@ -18,7 +18,9 @@ body {
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+
 }
+
 
 /* nav styles */
 
@@ -83,7 +85,7 @@ h1 {
 }
 
 html.dark {
-  background-color: #0d0950;
+  background-color: #000000;
   color: #fff;
 }
 

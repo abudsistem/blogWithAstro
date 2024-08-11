@@ -1,9 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Greeting from '../components/Greeting';
-const pageTitle = "Home Page";
+const pageTitle = "IsterDeportes";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
+  <p>Bienvenidos a IsterDeportes, tu nueva fuente de noticias, análisis y opiniones sobre el mundo del deporte. Aquí, no solo te mantenemos al día con los últimos acontecimientos en las ligas más importantes, sino que también te ofrecemos un espacio donde los apasionados del deporte pueden compartir sus ideas y experiencias.</p>
+
+  <p>Nuestro equipo de expertos y aficionados te trae blogs detallados sobre fútbol, baloncesto, tenis, y mucho más. Ya sea que busques entender mejor las tácticas detrás del juego, conocer a fondo a tus atletas favoritos, o simplemente disfrutar de anécdotas deportivas, ¡este es tu lugar!</p>
+
+  <p>Únete a nuestra comunidad y participa en la conversación. En [Nombre de tu Sitio], cada aficionado tiene una voz.</p>
+
 </BaseLayout>
